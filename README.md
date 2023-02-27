@@ -1,6 +1,13 @@
 # Teth
 A text editor in haskell
 
+Planned features:
+- modal
+- modular
+- config is haskell
+- macros are haskell
+- can be configured to be vim
+
 ---
 
     Copyright (C) 2023  Carter "pyrotelekinetic" Ison <carter@isons.org>
