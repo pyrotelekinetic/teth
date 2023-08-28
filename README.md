@@ -1,12 +1,15 @@
 # Teth
 A text editor in haskell
 
-Planned features:
-- modal
-- modular
-- config is haskell
-- macros are haskell
-- can be configured to be vim
+Goals:
+- powerful config
+  - should be able to closely emulate behavior of both vim and emacs
+- native [editorconfig](https://editorconfig.org) support
+  - there should be no (or as little as possible) overlap between teth "native" config and editorconfig
+- modular (seamless plugin support)
+- wayland and X11 clipboard support
+- sane defaults for regular humans
+
 
 ---
 
