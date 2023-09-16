@@ -3,7 +3,7 @@ A text editor in haskell
 
 Goals:
 - powerful config
-  - should be able to closely emulate behavior of both vim and emacs
+  - should be able to loosely emulate behavior of vim, emacs, and nano
 - native [editorconfig](https://editorconfig.org) support
   - there should be no (or as little as possible) overlap between teth "native" config and editorconfig
 - modular (seamless plugin support)
