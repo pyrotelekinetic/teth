@@ -66,8 +66,15 @@ executable teth
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
 
-    -- Other library packages from which modules are imported.
-    build-depends:    base ^>=4.16.4.0
+    -- Libraries are locked to the version used by nix. Hopefully this will make
+    -- cabal builds as similar to nix builds as possible. The library versions
+    -- are obtained by entering the nix dev-shell and checking the output of
+    -- 'ghc-pkg list'.
+    build-depends:
+        , base == 4.16.4.0
+        , brick == 1.4
+        , vty == 5.37
+        , text == 1.2.5.0
 
     -- Directories containing source files.
     hs-source-dirs:   app
