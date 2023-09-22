@@ -17,8 +17,8 @@ in {
   packages.x86_64-linux.default = teth;
 
   devShells.x86_64-linux.default = haskellPackages.shellFor {
-    packages = _: with haskellPackages; [
-      teth
+    packages = _: [ teth ];
+    nativeBuildInputs = with haskellPackages; [
       ghcid
       hlint
       cabal2nix
