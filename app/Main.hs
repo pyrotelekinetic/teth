@@ -1,9 +1,11 @@
 module Main where
 
-import Brick
-
-ui :: Widget ()
-ui = str "Hello, Haskell!"
+import Core.Text.Rope
+import Graphics.Vty
 
 main :: IO ()
-main = simpleMain ui
+main = do
+  vty <- mkVty =<< standardIOConfig
+  update vty . picForImage . string defAttr $ fromRope "Hello, Haskell!"
+  nextEvent vty
+  shutdown vty

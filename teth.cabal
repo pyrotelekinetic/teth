@@ -18,6 +18,7 @@ extra-doc-files:    README.md
 common options
     ghc-options:
         -Wall
+        -Wno-unused-do-bind
         -threaded
 
 executable teth
@@ -33,10 +34,7 @@ executable teth
     -- 'ghc-pkg list'.
     build-depends:
         , base == 4.16.4.0
-        , brick == 1.4
         , vty == 5.37
-        , text == 1.2.5.0
-        , lens == 5.1.1
         , core-text == 0.3.8.1
 
     hs-source-dirs:   app
