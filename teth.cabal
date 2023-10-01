@@ -24,7 +24,9 @@ common options
 executable teth
     import:           options
 
-    default-extensions: OverloadedStrings
+    default-extensions:
+      OverloadedStrings
+      LambdaCase
 
     main-is:          Main.hs
 
@@ -35,7 +37,8 @@ executable teth
     build-depends:
         , base == 4.16.4.0
         , vty == 5.37
-        , core-text == 0.3.8.1
+        , yi-rope == 0.11
+        , text == 1.2.5.0
 
     hs-source-dirs:   app
 
